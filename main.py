@@ -171,7 +171,6 @@ async def main():
 
             if await client.invoke(ReportPeer(peer=channel , reason=reason , message='')):
                 print(f'Репорт отправлен успешно.')
-        # здесь нужно саму отправку репортов делать
         if amount > 0:
             print(f'Для задания по репортам на канал {channel_link} не хватило аккаунтов.')
 
